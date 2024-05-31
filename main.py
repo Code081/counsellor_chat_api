@@ -10,7 +10,7 @@ def index():
 def chat():
     data = request.json
     user_message = data.get('message')
-    # Here you would integrate your AI model to generate a response
+    # integrate your AI model to generate a response
     ai_response = generate_response(user_message)
     return jsonify({"response": ai_response})
 
